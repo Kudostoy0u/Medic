@@ -1,4 +1,4 @@
-let notifier = new AWN({ icons: {enabled: false}})
+let notifier = new AWN({ icons: { enabled: false }, durations: { global: 1000 }})
 const threeTrees = ["OakTree.png", "PineTree.png", "SequoiaTree.png"]
 let index = 0;
 if (!localStorage.getItem("tps")) {
