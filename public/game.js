@@ -23,7 +23,6 @@ fetch('./producers.json')
 		$("#producers").innerHTML += "<br><br>"
 		document.querySelectorAll(".producer").forEach(e => e.addEventListener("click", function () {
 			if (Number(this.dataset.cost) <= Number(localStorage.getItem("trees"))) {
-				notifier.success('Sucessfully purchased!')
 				localStorage.setItem("tps", String(Number(localStorage.getItem("tps")) + Number(this.dataset.product)))
 				localStorage.setItem("trees", String(Number(localStorage.getItem("trees")) - Number(this.dataset.cost)))
 				localStorage.setItem(`${this.dataset.name.replace(/\s/g, '')}total`, (Number(localStorage.getItem(`${this.dataset.name.replace(/\s/g, '')}total`)) || 0) + 1)
@@ -75,8 +74,8 @@ fetch('./research.json')
 			if (Number(this.dataset.cost) <= Number(localStorage.getItem("oxygen"))) {
 				localStorage.setItem("tps", String(Math.ceil(Number(localStorage.getItem("tps")) * Number(this.dataset.product))))
 				localStorage.setItem("oxygen", String(Number(localStorage.getItem("trees")) - Number(this.dataset.cost)))
-				localStorage.setItem(`${this.dataset.name.replace(/\s/g, '')}total`, (Number(localStorage.getItem(`${this.dataset.name.replace(/\s/g, '')}total)`)) || 0) + 1)
-				$(`#${this.id.replace(/\s/g, '')} > h4 > span`).innerHTML = "3"//localStorage.getItem(`${this.dataset.name.replace(/\s/g, '')}total`)
+				localStorage.setItem(`${this.dataset.name.replace(/\s/g, '')}total`, Number(localStorage.getItem(`${this.dataset.name.replace(/\s/g, '')}total`)) + 1)
+				$(`#${this.id.replace(/\s/g, '')} > h4 > span`).innerHTML = localStorage.getItem(`${this.dataset.name.replace(/\s/g, '')}total`)
 			} else {
 				alert("Lack of Funds!")
 			}
