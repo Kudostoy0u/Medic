@@ -1,40 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title> Tree clicker! </title>
+<title>Tree Clicker</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<link rel="icon" href="./assets/Tree.png" type="image/x-icon" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 <link href = "./style.css" rel = "stylesheet"/>
 <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-
-</head>	
+<link rel="stylesheet" href="not.css"></link>
+<script src="not.js"></script>
+</head>
 <body>
 <div id = "start">
-	<h1 onclick = "start()" id = "play"> [ Play ] </h1>
+	<h1 id = "play"> [ Play ] </h1>
 	<h1 id = "typewriter"></h1>
 	<img id = "acorn" class = "acorn" src="./assets/Acorn.png" alt="Acorn">
+	<br>
+	<h1 id = "plant">[ Click the acorn to plant the tree ]</h1>
+</div>
+<div id = "navbar" style = "height:7%">
+	<ul id = "ul">
+		<li id = "li"><a class="active" href="">Tree Clicker</a></li>
+		<li id = "li"><a class="active" href="https://teamtrees.org/">Donate</a></li>
+		<li id = "li"><a href="/learn">Learn More</a></li>
+		<li id = "li"><a href="https://github.com/Kudostoy0u/treeclicker">Github</a></li>
 
+	      </ul>
 </div>
 <div id = "container">
 	<div id = "research">
 		Research
 	</div>
 	<div id = "center">
-		Center
+		<div id = "values">
+			<h3 id = "trees">Trees: </h3>
+			<h3 id = "oxygen">Oxygen: </h3>
+			<h3 id = "tps">TPS: </h3>
+		</div>
+		<div style = "height:10vh">
+		</div>
+		<img id = "tree" src = "assets/OakTree.png"/>
+
 	</div>
 	<div id = "producers">
 		Producers
-	</div>
-	<div id = "upgrades">
-		Upgrades
+		<br>
+
 	</div>
 </div>
-<script src = "./script.js"></script>
+
 <script>
 	setTimeout(() => {
-		window.scrollTo(100, 100);
-	},100	)
+		window.scrollTo(100, 10);
+	},50	)
 </script>
+<div class="ticker-wrap">
+	<div class="ticker">
+	  <div class="ticker__item">The tree gods approve of your efforts.</div>
+	  <div class="ticker__item">Locals join in on the fun.</div>
+	  <div class="ticker__item">"My legs are getting cramped from all these trees" - Anonymous Earthling</div>
+	  <div class="ticker__item">"GMO trees may actually help the environment" says Mad Lab Industries. </div>
+	  <div class="ticker__item">#teamtrees!</div>
+	  <div class="ticker__item">Kudos has been hard at work all this time...</div>
+	  <div class="ticker__item">Trees help me breathe" local says.</div>
+	  <div class="ticker__item">"Skyscrapers definitely look better than this green foliage" says crazed protester.</div>
+	  <div class="ticker__item">Your trees are helping the world!</div>
+	  <div class="ticker__item">People around the world flock to see these trees.</div>
+	  <div class="ticker__item">Social reform is prevalent around the world.</div>
+	  <div class="ticker__item">It may be time for a break... But then again, these trees aren't gonna plant themselves.</div>
+	  <div class="ticker__item">Worldwide pollen allergies are on the rise.</div>
+</div>
+</div>
+	  <script src = "./script.js"></script>
+	  <script src = "./game.js"></script>
+
 </body>
 </html>

@@ -1,11 +1,32 @@
 {
 	"research": [
 		{
-			"name" : "",
+			"name" : "Plant A Tree",
 			"cost" : "10",
-			"icon" : "",
-			"description" : "#teamtrees",
-			"product" : "" 
+			"icon" : "birch.png",
+			"description" : "A tree a day keeps the... Hold up nothing rhymes with tree...",
+			"product" : "1.2" 
+		},
+        {
+			"name" : "Recycling",
+			"cost" : "100000",
+			"icon" : "recycle.png",
+			"description" : "Save the trees without even touching a tree! It's like magic.",
+			"product" : "1.2" 
+		},
+        {
+			"name" : "No Fire Wood",
+			"cost" : "100000000",
+			"icon" : "nofire.png",
+			"description" : "Less fire, more wood.",
+			"product" : "1.2" 
+		},
+        {
+			"name" : "Eco-Friendly Practices",
+			"cost" : "1000000000000",
+			"icon" : "leaf.png",
+			"description" : "Changes in our lives lead to changes in our world.",
+			"product" : "1.2" 
 		}
 	]
 }

@@ -3,86 +3,79 @@
 		{
 			"name" : "Tree",
 			"cost" : "10",
-			"icon" : "",
+			"icon" : "Tree.png",
 			"description" : "#teamtrees",
-			"product" : "0.1" 
+			"product" : "1" 
 		},
 		{
 			"name" : "Shovel",
 			"cost" : "100",
-			"icon" : "",
+			"icon" : "Shovel.png",
 			"description" : "Now we're talking! Go out, get your hands dirty, and touch some grass me lads!",
-			"product" : "1" 
+			"product" : "3" 
 		},
         {
 			"name" : "Gardener",
-			"cost" : "1 Thousand",
-			"icon" : "",
+			"cost" : "1000",
+			"icon" : "Gardener.png",
 			"description" : "Full time, recreational tree planters. Your very own grandma might be a member of this speedy tree-planting coalition...",
 			"product" : "8" 
 		},
         {
 			"name" : "Tree Farm",
-			"cost" : "10 Thousand",
-			"icon" : "",
+			"cost" : "10000",
+			"icon" : "FarmIcon.png",
 			"description" : "Plant, harvest, and re-plant trees at George Ford assembly line speeds. Not sure why you'd unearth and replant a tree, but you do you.",
 			"product" : "50" 
 		},
         {
 			"name" : "Tree Mine",
-			"cost" : "100 Thousand",
-			"icon" : "",
+			"cost" : "100000",
+			"icon" : "Mine.png",
 			"description" : "Mine trees from the depths of the earth. Don't ask me how it works, probably some mad science.",
 			"product" : "250" 
 		},
         {
 			"name" : "Seed Bank",
-			"cost" : "1 Million",
-			"icon" : "",
+			"cost" : "1000000",
+			"icon" : "Bank.png",
 			"description" : "Get new trees from tree-seed loan interest... Interesting...",
-			"product" : "1.5 thousand" 
+			"product" : "1500" 
 		},
         {
-			"name" : "Aboretum",
-			"cost" : "20 Million",
-			"icon" : "",
+			"name" : "Arboretum",
+			"cost" : "20000000",
+			"icon" : "arboretum.png",
 			"description" : "Trees trees and more trees. Get money for more trees from the fare visitors pay to visit your trees.",
-			"product" : "8 thousand" 
-		},
-        {
-			"name" : "Recycling Plant",
-			"cost" : "300 Million",
-			"icon" : "",
-			"description" : "Save the trees without even touching a tree! ",
-			"product" : "45 thousand" 
+			"product" : "8000" 
 		},
         {
 			"name" : "Tree-free Products",
-			"cost" : "5 Billion",
-			"icon" : "",
+			"cost" : "700000000",
+			"icon" : "TreeFreeProduct.png",
 			"description" : "No trees, no problem (might seem counter intuitive if you think about it in the wrong way, but trust the devs on this)",
-			"product" : "260 thousand" 
+			"product" : "260000" 
 		},
         {
 			"name" : "World Tree Organization",
-			"cost" : "75 Billion",
-			"icon" : "",
+			"cost" : "75000000000",
+			"icon" : "WTO.png",
 			"description" : "It's like the WHO but for trees... Them trees lookin' healthy!",
-			"product" : "1.5 million" 
+			"product" : "1500000" 
 		},
         {
 			"name" : "Kudos' Javascript Console",
-			"cost" : "1 Trillion",
-			"icon" : "",
+			"cost" : "100000000000",
+			"icon" : "terminal.png",
 			"description" : "Materialize trees straight from the nerd's very own console",
-			"product" : "10 million" 
+			"product" : "10000000" 
 		},
         {
 			"name" : "Tree Fundraiser",
-			"cost" : "15 Trillion",
-			"icon" : "",
+			"cost" : "15000000000000",
+			"icon" : "teamtrees.png",
 			"description" : "#teamtrees... It has finally come full circle...",
-			"product" : "65 million" 
+			"product" : "65000000" 
 		}
 	]
 }
