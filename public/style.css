@@ -1,0 +1,109 @@
+html {
+	height:100%;
+	width:100%;
+}
+body {
+	height:100%;
+	width:100%;
+	/* overflow:hidden; */
+	font-family: 'VT323', monospace;
+}
+#container {
+	display:flex;
+	height:100%;
+	width:100%;
+}
+#research {
+	flex: 20%;
+	height: 93%;
+	background:white;
+}
+#center {
+	flex: 40%;
+	height: 93%;
+	background:white;
+}
+#producers {
+	flex: 20%;
+	height: 93%;
+	background:white;
+}
+#upgrades {
+	flex: 20%;
+	height: 93%;
+	background:white;
+}
+#container > * {
+	position:relative;
+	text-align:center;
+	border:1px solid lightgray;
+
+}
+* {
+	box-sizing: border-box;
+}      
+#typewriter {
+	position: fixed; /* or absolute */
+	top: 50%;
+	left: 50%;
+	/* bring your own prefixes */
+	transform: translate(-50%, -50%);
+	color:white;
+}
+#play {
+	position: fixed; /* or absolute */
+	top: 50%;
+	left: 50%;
+	/* bring your own prefixes */
+	transform: translate(-50%, -50%);
+	color:white;
+	cursor: pointer;
+}
+.acorn {
+	position: fixed; /* or absolute */
+	top: 50%;
+	left: 50%;
+	/* bring your own prefixes */
+	transform: translate(-50%, -50%);
+	color:white;
+	cursor: pointer;
+	display:none;
+}
+.acornin {
+	position: fixed; /* or absolute */
+	top: 50%;
+	left: 50%;
+	/* bring your own prefixes */
+	transform: translate(-50%, -50%);
+	color:white;
+	cursor: pointer;
+	animation: fadeIn linear 2s;	
+	display:block;
+}
+@keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+  }
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #333;
+}
+
+li {
+float: left;
+}
+
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+li a:hover {
+background-color: #111;
+}

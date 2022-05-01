@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Tree Clicker! </title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+<link href = "./style.css" rel = "stylesheet"/>
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css" integrity="sha512-OivR4OdSsE1onDm/i3J3Hpsm5GmOVvr9r49K3jJ0dnsxVzZgaOJ5MfxEAxCyGrzWozL9uJGKz6un3A7L+redIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>	
+<body>
+<div id = "start">
+	<h1 onclick = "start()" id = "play"> [ Play ] </h1>
+	<h1 id = "typewriter"></h1>
+	<img id = "acorn" class = "acorn" src="./assets/Acorn.png" alt="Acorn">
+
+</div>
+<div id = "navbar" style = "height:7%">
+	<ul>
+		<li><a class="active" href="#">Tree Clicker</a></li>
+		<li><a href="https://teamtrees.org/">Donate</a></li>
+		<li><a href="/learn">Learn more</a></li>
+		<li><a href="#news"><i class="fab fa-github"></i></a></li>
+
+	      </ul>
+</div>
+<div id = "container">
+	<div id = "research">
+		Research
+	</div>
+	<div id = "center">
+		Center
+		<div style = "height:20vh"></div>
+		<img src = "assets/OakTree.png"/>
+	</div>
+	<div id = "producers">
+		Producers
+	</div>
+	<div id = "upgrades">
+		Upgrades
+	</div>
+</div>
+<script src = "./script2.js"></script>
+<script>
+	setTimeout(() => {
+		window.scrollTo(100, 10);
+	},100	)
+</script>
+</body>
+</html>
