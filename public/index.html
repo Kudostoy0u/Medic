@@ -1,31 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Tree Clicker</title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<link rel="icon" href="./assets/Tree.png" type="image/x-icon" />
+<title>Medic</title>
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/notie/dist/notie.min.css">
+<link rel="icon" href="./assets/medic.png" type="image/x-icon" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 <link href = "./style.css" rel = "stylesheet"/>
 <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-<link rel="stylesheet" href="not.css"></link>
-<script src="not.js"></script>
 </head>
 <body>
 <div id = "start">
 	<h1 id = "play"> [ Play ] </h1>
 	<h1 id = "typewriter"></h1>
-	<img id = "acorn" class = "acorn" src="./assets/Acorn.png" alt="Acorn">
+	<img id = "acorn" class = "acorn" src="./assets/health.png" alt="HealthSymbol">
 	<br>
-	<h1 id = "plant">[ Click the acorn to plant the tree ]</h1>
+	<h1 id = "plant">[ Start your journey ]</h1>
 </div>
 <div id = "navbar" style = "height:7%">
 	<ul id = "ul">
-		<li id = "li"><a class="active" href="">Tree Clicker</a></li>
-		<li id = "li"><a class="active" href="https://teamtrees.org/">Donate</a></li>
+		<li id = "li"><a class="active" href="">Medic</a></li>
+		<li id = "li"><a class="active" href="https://givenow.lls.org/give/394054/#!/donation/checkout">Donate</a></li>
 		<li id = "li"><a href="/learn">Learn More</a></li>
-		<li id = "li"><a href="https://github.com/Kudostoy0u/treeclicker">Github</a></li>
+		<li id = "li"><a href="https://github.com/Kudostoy0u/medic">Github</a></li>
 
 	      </ul>
 </div>
@@ -35,13 +33,13 @@
 	</div>
 	<div id = "center">
 		<div id = "values">
-			<h3 id = "trees">Trees: </h3>
-			<h3 id = "oxygen">Oxygen: </h3>
-			<h3 id = "tps">TPS: </h3>
+			<h3 id = "trees">Money: </h3>
+			<h3 id = "oxygen">Research Points: </h3>
+			<h3 id = "tps">Money per second: </h3>
 		</div>
 		<div style = "height:10vh">
 		</div>
-		<img id = "tree" src = "assets/OakTree.png"/>
+		<img id = "tree" src = "assets/health.png"/>
 
 	</div>
 	<div id = "producers">
@@ -75,6 +73,6 @@
 </div>
 	  <script src = "./script.js"></script>
 	  <script src = "./game.js"></script>
-
+    <script src="https://unpkg.com/notie"></script>
 </body>
 </html>

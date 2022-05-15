@@ -1,10 +1,9 @@
-let notifier = new AWN({ icons: { enabled: false }, durations: { global: 1000 }})
-const threeTrees = ["OakTree.png", "PineTree.png", "SequoiaTree.png"]
+
 let index = 0;
 if (!localStorage.getItem("tps")) {
 	localStorage.setItem("tps",0)
 }
-$("#trees").innerHTML = "Trees: " + localStorage.getItem("trees");
+$("#trees").innerHTML = "Money: " + localStorage.getItem("trees");
 let producerdata = {}
 fetch('./producers.json')
 	.then(response => response.json())
@@ -16,7 +15,7 @@ fetch('./producers.json')
 			<div id = "${e.name.replace(/\s/g, '')}" data-product = "${e.product}" data-name = "${e.name}" data-value="${e.product}" data-cost="${e.cost}" class="producer">
 			<img class = "pimg" src="./assets/${e.icon}" style="width:40%;height:20%;">
 			  <h4>${e.name} - <span>${localStorage.getItem(`${e.name.replace(/\s/g, '')}total`) || 0}</span> </h4> 
-			  <h8>${e.description} <br> <span style = "color:green">Costs ${e.cost} Trees</span></h8> 
+			  <h8>${e.description} <br> <span style = "color:green">Costs $${e.cost}</span></h8> 
 		      </div>
 			`
 		})
@@ -28,7 +27,7 @@ fetch('./producers.json')
 				localStorage.setItem(`${this.dataset.name.replace(/\s/g, '')}total`, (Number(localStorage.getItem(`${this.dataset.name.replace(/\s/g, '')}total`)) || 0) + 1)
 				$(`#${this.id} > h4 > span`).innerHTML = localStorage.getItem(`${this.dataset.name.replace(/\s/g, '')}total`)
 			} else {
-				notifier.warning('Lack of Funds!')
+				notie.alert({ type: 3, text: 'Not enough funds!', position: 'top' })
 			}
 		}))
 	});
@@ -36,10 +35,8 @@ if (localStorage.getItem("hasplayed")) {
 	let audio = new Audio("assets/russle.mp3")
 	$("#tree").addEventListener("click", () => {
 		audio.play()
-		index += 1;
 		localStorage.setItem("trees", Number(localStorage.getItem("trees")) + 1)
-		$("#tree").src = "./assets/" + threeTrees[index % 3]
-		$("#trees").innerHTML = "Trees: " + localStorage.getItem("trees")
+		$("#trees").innerHTML = "Money: " + localStorage.getItem("trees")
 	})
 
 }
@@ -47,9 +44,9 @@ setInterval(() => {
 	localStorage.setItem("trees", String(
 		Number(localStorage.getItem("trees")) + Number(localStorage.getItem("tps"))
 	))
-	$("#trees").innerHTML = "Trees: " + localStorage.getItem("trees");
-	$("#oxygen").innerHTML = "Oxygen: " + localStorage.getItem("oxygen");
-	$("#tps").innerHTML = "TPS: " + Number(localStorage.getItem("tps")) || 0
+	$("#trees").innerHTML = "Money: " + localStorage.getItem("trees");
+	$("#oxygen").innerHTML = "Research Points: " + localStorage.getItem("oxygen");
+	$("#tps").innerHTML = "Money per second: " + Number(localStorage.getItem("tps")) || 0
 	localStorage.setItem("oxygen", Math.floor(Number(localStorage.getItem("trees")) * 0.001))
 	
 }, 1000)
@@ -65,7 +62,7 @@ fetch('./research.json')
 			<div id = "${e.name.replace(/\s/g, '')}" data-product = "${e.product}" data-name = "${e.name.replace(/\s/g, '')}" data-value="${e.product}" data-cost="${e.cost}" class="researcher">
 			<img class = "rimg" src="./assets/${e.icon}" style="width:40%;height:20%;">
 			  <h4>${e.name} - <span>${localStorage.getItem(`${e.name.replace(/\s/g, '')}total`) || 0}</span> </h4> 
-			  <h8>${e.description} <br> <span style = "color:green">Costs ${e.cost} Oxygen</span></h8> 
+			  <h8>${e.description} <br> <span style = "color:green">Costs ${e.cost} RP</span></h8> 
 		      </div>
 			`
 		})
@@ -77,7 +74,7 @@ fetch('./research.json')
 				localStorage.setItem(`${this.dataset.name.replace(/\s/g, '')}total`, Number(localStorage.getItem(`${this.dataset.name.replace(/\s/g, '')}total`)) + 1)
 				$(`#${this.id.replace(/\s/g, '')} > h4 > span`).innerHTML = localStorage.getItem(`${this.dataset.name.replace(/\s/g, '')}total`)
 			} else {
-				alert("Lack of Funds!")
+								notie.alert({ type: 3, text: 'Not enough funds!', position: 'top' })
 			}
 		}))
 	});

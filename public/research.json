@@ -1,31 +1,31 @@
 {
 	"research": [
 		{
-			"name" : "Plant A Tree",
+			"name" : "Penicillin",
 			"cost" : "10",
-			"icon" : "birch.png",
-			"description" : "A tree a day keeps the... Hold up nothing rhymes with tree...",
+			"icon" : "pill.png",
+			"description" : "The first antibiotic",
 			"product" : "1.2" 
 		},
         {
-			"name" : "Recycling",
+			"name" : "Soap",
 			"cost" : "100000",
-			"icon" : "recycle.png",
-			"description" : "Save the trees without even touching a tree! It's like magic.",
+			"icon" : "soap.png",
+			"description" : "Kill bacteria in every household!",
 			"product" : "1.2" 
 		},
         {
-			"name" : "No Fire Wood",
+			"name" : "Vaccine",
 			"cost" : "100000000",
-			"icon" : "nofire.png",
-			"description" : "Less fire, more wood.",
+			"icon" : "covid.png",
+			"description" : "Stop the viruses!",
 			"product" : "1.2" 
 		},
         {
-			"name" : "Eco-Friendly Practices",
+			"name" : "Gene editing",
 			"cost" : "1000000000000",
-			"icon" : "leaf.png",
-			"description" : "Changes in our lives lead to changes in our world.",
+			"icon" : "gene.png",
+			"description" : "Cure cancer. Cure aging. Cure EVERYTHING!",
 			"product" : "1.2" 
 		}
 	]

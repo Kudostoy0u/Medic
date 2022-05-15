@@ -1,2 +1,2 @@
-# treeclicker
-HackFTW Tree clicker
+# Medic
+HackIMSA "Medic"

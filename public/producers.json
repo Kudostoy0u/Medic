@@ -1,81 +1,61 @@
 {
 	"producers": [
 		{
-			"name" : "Tree",
+			"name" : "Mask",
 			"cost" : "10",
-			"icon" : "Tree.png",
-			"description" : "#teamtrees",
+			"icon" : "mask.png",
+			"description" : "Stop the spread!",
 			"product" : "1" 
 		},
 		{
-			"name" : "Shovel",
+			"name" : "Bandage",
 			"cost" : "100",
-			"icon" : "Shovel.png",
-			"description" : "Now we're talking! Go out, get your hands dirty, and touch some grass me lads!",
+			"icon" : "bandage.png",
+			"description" : "All part of the blood, sweat and tears into making this.",
 			"product" : "3" 
 		},
         {
-			"name" : "Gardener",
+			"name" : "Cough Medicine",
 			"cost" : "1000",
 			"icon" : "Gardener.png",
-			"description" : "Full time, recreational tree planters. Your very own grandma might be a member of this speedy tree-planting coalition...",
+			"description" : "We're all thankful for it...",
 			"product" : "8" 
 		},
         {
-			"name" : "Tree Farm",
+			"name" : "COVID testing",
 			"cost" : "10000",
 			"icon" : "FarmIcon.png",
-			"description" : "Plant, harvest, and re-plant trees at George Ford assembly line speeds. Not sure why you'd unearth and replant a tree, but you do you.",
+			"description" : "Identify Covid-19 before it's too late!",
 			"product" : "50" 
 		},
+    
         {
-			"name" : "Tree Mine",
+			"name" : "Clinic",
 			"cost" : "100000",
 			"icon" : "Mine.png",
-			"description" : "Mine trees from the depths of the earth. Don't ask me how it works, probably some mad science.",
+			"description" : "An apple a day keeps the clinic away...",
 			"product" : "250" 
 		},
         {
-			"name" : "Seed Bank",
+			"name" : "Hospital",
 			"cost" : "1000000",
 			"icon" : "Bank.png",
-			"description" : "Get new trees from tree-seed loan interest... Interesting...",
+			"description" : "Hope you don't have to go here very often.",
 			"product" : "1500" 
 		},
         {
-			"name" : "Arboretum",
+			"name" : "The Center for Disease Control",
 			"cost" : "20000000",
 			"icon" : "arboretum.png",
-			"description" : "Trees trees and more trees. Get money for more trees from the fare visitors pay to visit your trees.",
+			"description" : "The CDC gives advice for us all.",
 			"product" : "8000" 
 		},
         {
-			"name" : "Tree-free Products",
+			"name" : "WHO",
 			"cost" : "700000000",
 			"icon" : "TreeFreeProduct.png",
-			"description" : "No trees, no problem (might seem counter intuitive if you think about it in the wrong way, but trust the devs on this)",
+			"description" : "Who?",
 			"product" : "260000" 
-		},
-        {
-			"name" : "World Tree Organization",
-			"cost" : "75000000000",
-			"icon" : "WTO.png",
-			"description" : "It's like the WHO but for trees... Them trees lookin' healthy!",
-			"product" : "1500000" 
-		},
-        {
-			"name" : "Kudos' Javascript Console",
-			"cost" : "100000000000",
-			"icon" : "terminal.png",
-			"description" : "Materialize trees straight from the nerd's very own console",
-			"product" : "10000000" 
-		},
-        {
-			"name" : "Tree Fundraiser",
-			"cost" : "15000000000000",
-			"icon" : "teamtrees.png",
-			"description" : "#teamtrees... It has finally come full circle...",
-			"product" : "65000000" 
 		}
 	]
 }

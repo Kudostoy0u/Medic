@@ -15,28 +15,6 @@ if (localStorage.getItem("hasplayed")) {
 			delay: 50,
 			deleteSpeed: 10
 		});
-		let audio = new Audio("assets/Flowery.mp3")
-		audio.volume = 0.11
-		audio.play() // the world is now ravaged by deforestation
-		setTimeout(() => {
-
-			audio.pause() // (stop)
-			audio.currentTime = 0
-		}, 3050)
-		setTimeout(() => {
-			audio.play()    // the repurcussions are insurmountable 
-		}, 8000)
-		setTimeout(() => {
-			audio.pause() // (stop)
-			audio.currentTime = 0
-		}, 10500)
-		setTimeout(() => {
-			audio.play() // It's up to you to help!
-		}, 15200)
-		setTimeout(() => {
-			audio.pause() //(stop)
-			audio.currentTime = 0
-		}, 16900)
 	
 		setTimeout(() => {
 			$("#acorn").classList.remove("acorn")
@@ -46,13 +24,12 @@ if (localStorage.getItem("hasplayed")) {
 		$("#acorn").addEventListener("click", () => {
 			location.reload()
 		})
-	
-		typewriter.typeString('The world is now ravaged by deforestation...')
+		typewriter.typeString('Thousands of people die every hour...')
 			.pauseFor(1500)
 			.deleteAll()
 			.pauseFor(500)
 			.start()
-		typewriter.typeString('The repercussions are insurmountable...')
+		typewriter.typeString('Healthcare isn\'t doing enough...')
 			.pauseFor(1500)
 			.deleteAll()
 			.pauseFor(500)
