@@ -1,7 +1,16 @@
+/*
+Script.js is for exclusively the introduction sequence
+*/
+
+
+// fake jquery DOM accesor
 const $ = document.querySelector.bind(document);
+
+// skip?
 if (localStorage.getItem("hasplayed")) {
 	$("#start").style.display = "none"
 } else {
+  // or commence introduction sequence
 	localStorage.setItem("hasplayed", "true");
 	$("#container").style.display = "none";
 	$("body").style.background = "black";
@@ -24,7 +33,7 @@ if (localStorage.getItem("hasplayed")) {
 		$("#acorn").addEventListener("click", () => {
 			location.reload()
 		})
-		typewriter.typeString('Thousands of people die every hour...')
+		typewriter.typeString('6 million people die every year from low quality healthcare...')
 			.pauseFor(1500)
 			.deleteAll()
 			.pauseFor(500)
@@ -38,7 +47,5 @@ if (localStorage.getItem("hasplayed")) {
 			.deleteAll()
 			.pauseFor(500)
 			.start().stop();
-	
-
 	})
 }	

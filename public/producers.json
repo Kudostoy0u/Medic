@@ -2,31 +2,38 @@
 	"producers": [
 		{
 			"name" : "Mask",
-			"cost" : "10",
+			"cost" : "0.5",
 			"icon" : "mask.png",
 			"description" : "Stop the spread!",
-			"product" : "1" 
+			"product" : "0.5" 
 		},
 		{
 			"name" : "Bandage",
-			"cost" : "100",
+			"cost" : "1",
 			"icon" : "bandage.png",
 			"description" : "All part of the blood, sweat and tears into making this.",
-			"product" : "3" 
+			"product" : "1" 
 		},
         {
 			"name" : "Cough Medicine",
-			"cost" : "1000",
+			"cost" : "5",
 			"icon" : "cough.png",
 			"description" : "We're all thankful for it...",
-			"product" : "8" 
+			"product" : "4" 
 		},
         {
 			"name" : "COVID testing",
-			"cost" : "10000",
+			"cost" : "100",
 			"icon" : "covidtest.png",
 			"description" : "Identify Covid-19 before it's too late!",
-			"product" : "50" 
+			"product" : "20" 
+		},
+        {
+			"name" : "Chemotherapy",
+			"cost" : "2000",
+			"icon" : "covidtest.png",
+			"description" : "Cancer treatement is a right.",
+			"product" : "20" 
 		},
     
         {

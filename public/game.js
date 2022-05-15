@@ -1,10 +1,16 @@
+/*
 
-let index = 0;
+Game.js is for the game mechanics
+
+*/
 if (!localStorage.getItem("tps")) {
 	localStorage.setItem("tps",0)
 }
+
 $("#money").innerHTML = "Money: " + localStorage.getItem("money");
+
 let producerdata = {}
+// Get all healthcare options
 fetch('./producers.json')
 	.then(response => response.json())
 	.then(data => {
@@ -19,7 +25,9 @@ fetch('./producers.json')
 		      </div>
 			`
 		})
+    
 		$("#producers").innerHTML += "<br><br>"
+    
 		document.querySelectorAll(".producer").forEach(e => e.addEventListener("click", function () {
 			if (Number(this.dataset.cost) <= Number(localStorage.getItem("money"))) {
 				localStorage.setItem("tps", String(Number(localStorage.getItem("tps")) + Number(this.dataset.product)))
@@ -32,7 +40,7 @@ fetch('./producers.json')
 		}))
 	});
 if (localStorage.getItem("hasplayed")) {
-	let audio = new Audio("assets/russle.mp3")
+	let audio = new Audio("assets/heartbeat.mp3")
 	$("#health").addEventListener("click", () => {
 		audio.play()
     $("#health").classList.add("dilate")
@@ -49,9 +57,9 @@ setInterval(() => {
 		Number(localStorage.getItem("money")) + Number(localStorage.getItem("tps"))
 	))
 	$("#money").innerHTML = "Money: " + localStorage.getItem("money");
-	$("#oxygen").innerHTML = "Research Points: " + localStorage.getItem("oxygen");
+	$("#rp").innerHTML = "Research Points: " + localStorage.getItem("rp");
 	$("#tps").innerHTML = "Money per second: " + Number(localStorage.getItem("tps")) || 0
-	localStorage.setItem("oxygen", Math.floor(Number(localStorage.getItem("money")) * 0.001))
+	localStorage.setItem("rp", Math.floor(Number(localStorage.getItem("money")) * 0.001))
 	
 }, 1000)
 document.querySelectorAll(".ticker__item").forEach(e => e.innerHTML += "&nbsp;".repeat(10))
@@ -72,15 +80,16 @@ fetch('./research.json')
 		})
 		$("#research").innerHTML += "<br><br>"
 		document.querySelectorAll(".researcher").forEach(e => e.addEventListener("click", function () {
-			if (Number(this.dataset.cost) <= Number(localStorage.getItem("oxygen"))) {
+			if (Number(this.dataset.cost) <= Number(localStorage.getItem("rp"))) {
 				localStorage.setItem("tps", String(Math.ceil(Number(localStorage.getItem("tps")) * Number(this.dataset.product))))
-				localStorage.setItem("oxygen", String(Number(localStorage.getItem("money")) - Number(this.dataset.cost)))
+				localStorage.setItem("rp", String(Number(localStorage.getItem("money")) - Number(this.dataset.cost)))
 				localStorage.setItem(`${this.dataset.name.replace(/\s/g, '')}total`, Number(localStorage.getItem(`${this.dataset.name.replace(/\s/g, '')}total`)) + 1)
-        $(`#${this.id.replace(/\s/g, '')} > h8 > span > span`).innerHTML = String(Number($(`#${this.id.replace(/\s/g, '')} > h8 > span > span`).innerHTML)*1000) + " "
-  this.setAttribute("data-cost", String(Number($(`#${this.id.replace(/\s/g, '')} > h8 > span > span`).innerHTML)*1000)); 
+        let newcost = String(Number($(`#${this.id.replace(/\s/g, '')} > h8 > span > span`).innerHTML)*1000)
+        $(`#${this.id.replace(/\s/g, '')} > h8 > span > span`).innerHTML = newcost + " "
+  this.setAttribute("data-cost", newcost); 
 				$(`#${this.id.replace(/\s/g, '')} > h4 > span`).innerHTML = localStorage.getItem(`${this.dataset.name.replace(/\s/g, '')}total`)
 			} else {
-								notie.alert({ type: 3, text: 'Not enough funds!', position: 'top' })
+				notie.alert({ type: 3, text: 'Not enough funds!', position: 'top' })
 			}
 		}))
 	});

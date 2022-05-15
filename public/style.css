@@ -146,7 +146,7 @@ background-color: #111;
 	flex:50%;
 
 }
-#oxygen {
+#rp {
 	flex:50%
 }
 #tree {
@@ -233,7 +233,7 @@ h3 {
 
 .dilate {
   transition:0.3s;
-  animation-duration: 1s;
+  animation-duration: 0.25s;
   animation-name:bounce
 }
 

@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Medic</title>
+<title>Mediclicker</title>
   <link rel="stylesheet" type="text/css" href="https://unpkg.com/notie/dist/notie.min.css">
 <link rel="icon" href="./assets/medic.png" type="image/x-icon" />
+<!--fonts-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <!--/fonts-->
 <link href = "./style.css" rel = "stylesheet"/>
 <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 </head>
@@ -34,7 +36,7 @@
 	<div id = "center">
 		<div id = "values">
 			<h3 id = "money">Money: </h3>
-			<h3 id = "oxygen">Research Points: </h3>
+			<h3 id = "rp">Research Points: </h3>
 			<h3 id = "tps">Money per second: </h3>
 		</div>
 		<div style = "height:10vh">
@@ -50,25 +52,27 @@
 </div>
 
 <script>
+  // address some window displacement issues
 	setTimeout(() => {
 		window.scrollTo(100, 10);
 	},50	)
 </script>
+<!-- News ticker -->
 <div class="ticker-wrap">
 	<div class="ticker">
-	  <div class="ticker__item">The tree gods approve of your efforts.</div>
-	  <div class="ticker__item">Locals join in on the fun.</div>
-	  <div class="ticker__item">"My legs are getting cramped from all these trees" - Anonymous Earthling</div>
-	  <div class="ticker__item">"GMO trees may actually help the environment" says Mad Lab Industries. </div>
-	  <div class="ticker__item">#teamtrees!</div>
-	  <div class="ticker__item">Kudos has been hard at work all this time...</div>
-	  <div class="ticker__item">"Trees help me breathe" local says.</div>
-	  <div class="ticker__item">"Skyscrapers definitely look better than this green foliage" says crazed protester.</div>
-	  <div class="ticker__item">Your trees are helping the world!</div>
-	  <div class="ticker__item">People around the world flock to see these trees.</div>
+	  <div class="ticker__item">The bandage gods approve of your efforts.</div>
+	  <div class="ticker__item">Doctors reccomend taking a second, booster vaccine.</div>
+	  <div class="ticker__item">"My arms are getting tired from all these vaccines" - Anonymous Earthling.</div>
+	  <div class="ticker__item">"GMO Tylenol may actually help the environment" says Mad Lab Industries. </div>
+	  <div class="ticker__item">#staysafe</div>
+	  <div class="ticker__item">Mask Up!</div>
+	  <div class="ticker__item">"Hospitals are helpful" local says.</div>
+	  <div class="ticker__item">"Skyscrapers definitely look better than this testing facility" says crazed protester.</div>
+	  <div class="ticker__item">Your hearts are helping the world!</div>
+	  <div class="ticker__item">The CDC reccomends social distancing.</div>
 	  <div class="ticker__item">Social reform is prevalent around the world.</div>
-	  <div class="ticker__item">It may be time for a break... But then again, these trees aren't gonna plant themselves.</div>
-	  <div class="ticker__item">Worldwide pollen allergies are on the rise.</div>
+	  <div class="ticker__item">"New gene editing discovered!" says TotallyLegitLabs.</div>
+	  <div class="ticker__item">Worldwide Covid cases are on the rise.</div>
 </div>
 </div>
 	  <script src = "./script.js"></script>
