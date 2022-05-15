@@ -142,7 +142,7 @@ background-color: #111;
 	justify-content: center;
 	text-align:center;
 }
-#trees {
+#money {
 	flex:50%;
 
 }
@@ -170,7 +170,7 @@ background-color: #111;
 
 }
 .pimg {
-	transform:scale(1.2);
+	transform:scale(1);
 }
 
 h3 {
@@ -230,20 +230,27 @@ h3 {
 	font-size: 2rem;
 	color: white;
       }
-/* toastr.options{
-	"closeButton": true,
-	"debug": false,
-	"newestOnTop": false,
-	"progressBar": false,
-	"positionClass": "toast-top-right",
-	"preventDuplicates": false,
-	"onclick": null,
-	"showDuration": "300",
-	"hideDuration": "1000",
-	"timeOut": "5000",
-	"extendedTimeOut": "1000",
-	"showEasing": "swing",
-	"hideEasing": "linear",
-	"showMethod": "fadeIn",
-	"hideMethod": "fadeOut"
-			} */
+
+.dilate {
+  transition:0.3s;
+  animation-duration: 1s;
+  animation-name:bounce
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1)
+  }
+  50% {
+    transform: scale(0.7)
+  }
+  100% {
+    transform: scale(1)
+  }
+}
+.mimg {
+  transform:scale(1.2)
+}
+#health {
+  cursor:pointer;
+}

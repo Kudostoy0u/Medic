@@ -17,14 +17,14 @@
         {
 			"name" : "Cough Medicine",
 			"cost" : "1000",
-			"icon" : "Gardener.png",
+			"icon" : "cough.png",
 			"description" : "We're all thankful for it...",
 			"product" : "8" 
 		},
         {
 			"name" : "COVID testing",
 			"cost" : "10000",
-			"icon" : "FarmIcon.png",
+			"icon" : "covidtest.png",
 			"description" : "Identify Covid-19 before it's too late!",
 			"product" : "50" 
 		},
@@ -32,28 +32,28 @@
         {
 			"name" : "Clinic",
 			"cost" : "100000",
-			"icon" : "Mine.png",
+			"icon" : "clinic.png",
 			"description" : "An apple a day keeps the clinic away...",
 			"product" : "250" 
 		},
         {
 			"name" : "Hospital",
 			"cost" : "1000000",
-			"icon" : "Bank.png",
+			"icon" : "hospital.png",
 			"description" : "Hope you don't have to go here very often.",
 			"product" : "1500" 
 		},
         {
 			"name" : "The Center for Disease Control",
 			"cost" : "20000000",
-			"icon" : "arboretum.png",
+			"icon" : "cdc.png",
 			"description" : "The CDC gives advice for us all.",
 			"product" : "8000" 
 		},
         {
 			"name" : "WHO",
 			"cost" : "700000000",
-			"icon" : "TreeFreeProduct.png",
+			"icon" : "who.png",
 			"description" : "Who?",
 			"product" : "260000" 
 		}
